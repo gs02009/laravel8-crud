@@ -1,0 +1,44 @@
+comandos usados laravel
+
+composer create-project laravel/laravel proyecto "8.*"
+
+
+ejecutar servidor
+
+php artisan serve
+
+
+-----------------------//generar migraciones a partir de base de datos
+
+Installation
+composer require --dev bennett-treptow/laravel-migration-generator
+php artisan vendor:publish --provider="LaravelMigrationGenerator\LaravelMigrationGeneratorProvider"
+
+
+
+
+
+//  colocar en cada modelo
+
+
+
+ public $timestamps = false;
+
+
+
+
+// genera modelos a partir de una base de datos
+
+composer require reliese/laravel --dev
+php artisan vendor:publish --tag=reliese-models
+---
+
+php artisan code:models
+
+
+
+// crear controladores
+
+php artisan make:controller VehiculoController --resource
+
+
